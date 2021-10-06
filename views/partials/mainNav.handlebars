@@ -1,0 +1,29 @@
+<nav class="navbar blue darken-4">
+    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <div class="nav-wrapper nav-margin">
+        <a href="/" class="brand-logo">The Tech Blog</a>
+        <ul class="right hide-on-med-and-down">
+            {{#if loggedIn}}
+                <li><a href="/dashboard">Dashboard</a></li>
+            {{/if}}            
+            {{#if loggedIn}}
+                <li><a href="/" class="logout">Logout</a></li>
+            {{else}}
+                <li><a href="/login">Login</a></li>
+            {{/if}}
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-nav">
+    {{#if loggedIn}}
+        <li><a href="/dashboard">Dashboard</a></li>
+    {{/if}}            
+    {{#if loggedIn}}
+        <li><a href="/" class="logout"><i class="material-icons">lock_outline</i>Logout</a></li>
+    {{else}}
+        <li><a href="/login"><i class="material-icons">lock_open</i>Login</a></li>
+    {{/if}}
+</ul>
+
+<script src="/assets/scripts/mainNav.js"></script>

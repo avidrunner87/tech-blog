@@ -1,0 +1,29 @@
+<header class="no-padding">
+	{{> basicNav }}
+</header>
+<main class="container">
+    <form class="login-form">
+        <div class="row">
+            <div class="input-field col s10 m6 xl4 offset-s1 offset-m3 offset-xl4">
+                <input id="login-email" type="text" class="validate">
+                <label for="login-email">Email Address</label>
+            </div>
+            <div class="input-field col s10 m6 xl4 offset-s1 offset-m3 offset-xl4">
+                <input id="login-password" type="password" class="validate">
+                <label for="login-password">Password</label>
+            </div>
+            <div class="col s10 m6 xl4 offset-s1 offset-m3 offset-xl4">
+                <a id="login-submit" class="waves-effect waves-light btn blue lighten-2">Login</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s10 m6 xl4 offset-s1 offset-m3 offset-xl4">
+                Don't have an account? <a href="#modal-signup" class="modal-trigger">Get Started</a>
+            </div>
+        </div>
+    </form>
+
+    {{> signUp }}
+
+    <script src="/assets/scripts/login.js"></script>
+</main>

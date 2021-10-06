@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+
+        <!-- Links to 3rd Party Stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+        <!-- Link to Local Stylesheet -->
+        <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+    <!-- Links to 3rd Party Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!-- Link to Local Scripts -->
+    {{#if loggedIn}}
+        <script src="/assets/scripts/logout.js"></script>
+    {{/if}}
+
+    {{{body}}}
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Texas",
+    "database": "techblog_db",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

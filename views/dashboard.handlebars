@@ -1,0 +1,14 @@
+<header class="no-padding">
+	{{> dashboardNav }}
+</header>
+<main class="container">
+    <h4>Dashboard</h4>
+    <div class="section">
+        {{#each blog.posts as |post|}}
+            {{> post-details}}
+        {{/each}}
+    </div>
+
+    {{> postUser }}
+    {{> commentPost }}
+</main>

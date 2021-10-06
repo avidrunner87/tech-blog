@@ -1,0 +1,23 @@
+<nav class="navbar blue darken-4">
+    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <div class="nav-wrapper nav-margin">
+        <a href="/" class="brand-logo">The Tech Blog</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">           
+            <li><a href="#postUser" class="modal-trigger"><i class="material-icons left">add</i>New Post</a></li>
+            
+            {{#if loggedIn}}
+                <li><a href="/">Logout</a></li>
+            {{/if}}
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-nav">
+    <li><a href="#postUser" class="modal-trigger"><i class="material-icons left">add</i>New Post</a></li>
+    
+    {{#if loggedIn}}
+        <li><a href="/"><i class="material-icons">lock_outline</i>Logout</a></li>
+    {{/if}}
+</ul>
+
+<script src="/assets/scripts/dashboardNav.js"></script>
