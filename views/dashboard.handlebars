@@ -4,8 +4,8 @@
 <main class="container">
     <h4>Dashboard</h4>
     <div class="section">
-        {{#each blog.posts as |post|}}
-            {{> post-details}}
+        {{#each posts as | post|}}
+            {{> postUser-details}}
         {{/each}}
     </div>
 

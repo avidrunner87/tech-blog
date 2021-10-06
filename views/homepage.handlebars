@@ -2,7 +2,11 @@
 	{{> mainNav }}
 </header>
 <main class="container">
-    <h1>Coming Soon!</h1>
+    <div class="section">
+        {{#each posts as | post|}}
+            {{> post-details}}
+        {{/each}}
+    </div>
 
     {{> commentPost }}
 </main>

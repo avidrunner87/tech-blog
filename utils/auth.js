@@ -1,11 +1,8 @@
 function withAuth(req, res, next){
-    console.log('with auth')
-    const { logged_in} = req.session;
+    const { logged_in } = req.session;
     if (!logged_in){
-        console.log('not logged in')
-        return res.redirect('/');
+        return res.redirect('/login');
     }
-    console.log('logged in')
     next();
 }
 

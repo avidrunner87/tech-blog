@@ -49,11 +49,12 @@ router.post('/login', async (req, res) => {
         }
 
         // Once the user successfully logs in, set up the sessions variable 'logged_in'
-        req.session.save(() => {
-            req.session.logged_in = true;
 
+        req.session.user_id = userData.id;
+        req.session.logged_in = true;
+
+        req.session.save(() => {
             res.status(200).json({
-                user: userData,
                 message: 'You are now logged in!'
             });
         });
