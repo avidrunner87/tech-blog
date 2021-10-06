@@ -9,6 +9,12 @@ router.get('/', withAuth, async (req, res) => {
 
         console.log(user_id);
         const postData = await Post.findAll({
+            include: [
+                {
+                    model: User,
+                    attributes: ['email']
+                }
+            ],
             where: {
                 user_id: user_id
             }
